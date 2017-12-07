@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_1"
+                android:text="@string/search_no_ble_help"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/adjust_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_1"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black72"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/search_no_ble_help_info"
+                />
+
+            <ImageView
+                android:id="@+id/turn_over_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adjust_text"
+                android:src="@drawable/down_icon"
+                android:visibility="gone"
+                />
+            <View
+                android:id="@+id/help_view_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/black_b5"
+                android:layout_below="@id/turn_over_icon"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/help_view_line"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/not_connect_ble_help"
+                android:textColor="@color/black22"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tv_not_connect_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv2"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black72"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/not_connect_ble_help_info"
+                />
+            <ImageView
+                android:id="@+id/turn_over_icon_below"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_not_connect_info"
+                android:src="@drawable/down_icon"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

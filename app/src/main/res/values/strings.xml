@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">BleAntiLost</string>
+    <string name="double_quit_app">再按一次退出应用程序</string>
+    <string name="main_hint">点击添加设备可显示附近蓝牙设备，连接成功之后可实时监控设备的状态</string>
+    <string name="main">首页</string>
+    <string name="add_device">添加设备</string>
+    <string name="search">搜索</string>
+    <string name="check_update">检查更新</string>
+    <string name="about">关于</string>
+    <string name="version_info">版本信息：www.hipad.cn</string>
+    <string name="current_version">当前版本V1.0.0</string>
+    <string name="setting">设置</string>
+    <string name="left_help">帮助</string>
+    <string name="dl_open">打开左边侧滑栏</string>
+    <string name="dl_close">关闭左边侧滑栏</string>
+    <string name="add_anti_lost">添加防丢设备</string>
+    <string name="loading">正在搜索蓝牙设备...</string>
+    <string name="connecting_ble_device">正在连接</string>
+    <string name="search_complete">搜索完成</string>
+    <string name="ble_switch">蓝牙</string>
+    <string name="bluetooth_switch">蓝牙开关</string>
+    <string name="ble_disconnect">断开连接</string>
+    <string name="close_bluetooth">您关闭了蓝牙开启权限，不能使用蓝牙BLE</string>
+    <string name="the_latest_version">已是最新版本</string>
+    <string name="ble_init_failed">蓝牙初始化失败</string>
+    <string name="allowed_to_scanned">允许被扫描</string>
+    <string name="ble_connected_device">连接设备</string>
+    <string name="distance">距离</string>
+    <string name="hint">提示</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="sure_quit_application">确定要退出应用程序吗？</string>
+    <string name="sure_connect_device">确定要连接设备</string>
+    <string name="close_ble">关闭蓝牙将不能扫描和连接设备，确定要关闭吗？</string>
+    <string name="cancel_connect">连接已断开</string>
+    <string name="success_connect">成功连接</string>
+    <string name="no_device">暂无设备</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="help">帮助</string>
+    <string name="quit">退出</string>
+    <string name="check_version">正在检查版本...</string>
+    <string name="sure_clear_cache">确定要清除应用程序缓存吗？</string>
+    <string name="clear_cache_success">已清除缓存</string>
+    <string name="is_connect_device">正在连接...</string>
+    <string name="ble_open_detection">开放检测</string>
+    <string name="search_no_ble_help">搜索不到蓝牙设备，请尝试如下解决方案：</string>
+    <string name="search_no_ble_help_info">
+        1.确保蓝牙设备已开、电量充足，且在有效范围（10米）内；\n
+        2.重启蓝牙设备，尝试重新搜索；\n
+        3.确保蓝牙设备处于可配对状态；\n
+        4.如使用智能穿戴设备，请先安装设备配套的应用，然后进入应用，按照提示搜索您的设备；\n
+        5.如要搜索的设备已在已配对设备列表中，请取消配对，重新搜索；
+    </string>
+    <string name="not_connect_ble_help">连接不上蓝牙设备，请尝试如下解决方案：</string>
+    <string name="not_connect_ble_help_info">
+        1.取消配对蓝牙设备，使其处于可配对状态后，重新搜索连接；\n
+        2.如蓝牙设备已与其他手机或设备连接，请先断开该连接；\n
+        3.如自动连接不上，请确认该蓝牙设备是否支持自动连接（可对比其他手机或设备）；\n
+        4.重启蓝牙设备和应用程序，重新匹配连接蓝牙设备；\n
+        5.苹果手机暂不支持与其他手机连接；\n
+        6.尝试用其它品牌手机或设备连接蓝牙设备，测试蓝牙设备是否正常；
+    </string>
+    <string name="add_device_name">添加设备</string>
+    <string name="set_device_name">设置设备名称</string>
+    <string name="anti_lost_hint">防丢提醒</string>
+    <string name="set_lost_hint">设置提醒</string>
+    <string name="search_ble_device">搜索设备</string>
+    <string name="is_connected_device">已配对设备</string>
+    <string name="connect_fail_hint">设备断开连接</string>
+    <string name="sure_cancel_match">确定要取消配对吗？</string>
+    <string name="not_connect">未连接</string>
+    <string name="phone_not_support_ble">您的手机不支持蓝牙BLE</string>
+    <string name="zero_kb">0KB</string>
+    <string name="guide_help">点击添加\n可以搜索和添加蓝牙设备哦！！！</string>
+    <string name="guide_help_menu">点击可以打开左边侧滑栏哦！！！</string>
+    <string name="know">知道了</string>
+    <string name="special_note">特别说明：需要连接的设备必须具有蓝牙功能</string>
+    <string name="has_been_connected">已连接</string>
+    <string name="no_data">附近暂无设备</string>
+</resources>

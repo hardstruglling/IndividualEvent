@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="alert_width">200dp</dimen>
+    <dimen name="thirty_dp">30dp</dimen>
+    <dimen name="forty_eight_dp">48dp</dimen>
+    <dimen name="fifty_eight_dp">58dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="action_button_height">32dp</dimen>
+    <dimen name="action_button_text_size">14sp</dimen>
+    <dimen name="action_button_min_width">56dp</dimen>
+    <dimen name="action_button_padding_horizontal">4dp</dimen>
+    <dimen name="ksw_md_thumb_ripple_size">42dp</dimen>
+    <dimen name="ksw_md_thumb_solid_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_top">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_bottom">10dp</dimen>
+    <dimen name="ksw_md_thumb_solid_size">20dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_size">21dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_offset">2dp</dimen>
+</resources>

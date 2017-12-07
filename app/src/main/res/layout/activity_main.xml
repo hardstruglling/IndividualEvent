@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hipad.bluetoothantilost.viewdrag.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dragLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main_left_bg"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="50dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/head_item"/>
+        <RelativeLayout
+            android:id="@+id/rl_search_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_search"
+                android:text="@string/search"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_update_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:id="@+id/iv_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/update"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_update"
+                android:text="@string/check_update"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_setting_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:id="@+id/iv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/settings"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_setting"
+                android:text="@string/setting"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_help_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:id="@+id/iv_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_help"
+                android:text="@string/help"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_about_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+            <ImageView
+                android:id="@+id/iv_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/about"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_about"
+                android:text="@string/about"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="@string/special_note"/>
+    </RelativeLayout>
+    <com.hipad.bluetoothantilost.viewdrag.CustomRelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayF5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/ble_blue">
+
+                <ImageView
+                    android:id="@+id/iv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/list"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_left"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+            <com.hipad.bluetoothantilost.view.MarqueeTextView
+                android:id="@+id/main_marquee_text"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/yellowFC"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:text="@string/main_hint"
+                android:textColor="@color/black72"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp">
+
+            <com.hipad.bluetoothantilost.view.InsLoadingView
+                android:id="@+id/main_ins_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_radius10_shape"
+                android:src="@drawable/white_shape"
+                app:start_color="@color/greenC3" />
+
+            <ImageView
+                android:id="@+id/iv_status_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/add" />
+
+            <ImageView
+                android:id="@+id/iv_success_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/success"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/btl_bar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:indeterminateDrawable="@drawable/progress_bar_anim"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_add_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="170dp"
+                android:text="@string/add_device"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black72"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/main_ins_loading"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/white_radius10_shape"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/ble_connected_device"
+                            android:textColor="@color/black72"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_device_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:padding="5dp"
+                            android:textColor="@color/black72"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/black_b5" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_connect_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/black72"
+                            android:textSize="14sp" />
+
+                        <com.hipad.bluetoothantilost.view.SwitchButton
+                            android:id="@+id/main_switch_disconnect"
+                            style="@style/SwitchButtonStyleMD"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="3dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.hipad.bluetoothantilost.viewdrag.CustomRelativeLayout>
+
+</com.hipad.bluetoothantilost.viewdrag.DragLayout>
